@@ -2,8 +2,8 @@ import requests
 import json
 
 #General Zabbix parameters. Remove username and password after API token is generated!
-url = "https://meeseeks.true.nl/api_jsonrpc.php"
-zabbix_username = "ABCDEF"
+zabbix_url = "https://myzabbix.com/api_jsonrpc.php"
+zabbix_username = "username"
 zabbix_password = "password"
 
 
@@ -80,7 +80,14 @@ ff02::2 ip6-allrouters\n\n\n''')
 
 
 
+#If you do not have a API token yet, use the following line to aquire it.
+#Once printed, copy the token and paste it in the variable below.
+
+#print(get_api_token(zabbix_url))
+
 api_token = "cqfgye7aasXimVrBpGeuoUimnsjABpGw"
 
-zabbix_hosts = get_hosts(api_token,url)
-generate_host_file(zabbix_hosts,"/etc/hosts")
+#once the API token has been set, comment the print line again and uncomment the follwoing lines. 
+
+#zabbix_hosts = get_hosts(api_token,zabbix_url)
+#generate_host_file(zabbix_hosts,"/etc/hosts")
