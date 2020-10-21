@@ -58,7 +58,13 @@ def generate_host_file(hosts,host_file):
     f = open(host_file, "w")
 
     #As the hostfile is overwritten on each call, write the defaults first:
+
+    #For Debian based hosts
     f.write('''127.0.0.1 localhost
+
+    #For RHEL based hosts
+#    f.write('''127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+#::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
 
 # The following lines are desirable for IPv6 capable hosts
 ::1 localhost ip6-localhost ip6-loopback
