@@ -1,7 +1,11 @@
-
-
 Colletion of scripts that interact with zabbix.
 <hr>
+
+## License
+The code in this repository is free to use for both personal and commerical use.
+It is required to mention my name and Github username in any publications both online and offline.
+Name: Yadvir Singh
+Github: @cheatas
 
 
 ## `host_pull_zabbix.py`
@@ -11,10 +15,10 @@ It is recommended to create a seperate API user with appropriate rights.
 
 #### Usage
 
-1. Fill in the required parameters; *username*, *password*, *zabbix_url*
+1. Fill in the required parameters; *zabbix_url*, *zabbix_username*, *zabbix_password*
 2. Request the API token by uncommenting the line `print(get_api_token(zabbix_url))`. This will print the API token. 
 3. Copy the printed API token and set the variable `api_token` to the aquired API token. The `print(get_api_token(zabbix_url))` line can be commented again. 
-4. Uncomment 2 last lines and in the following run, the /etc/hosts file shoudl be populated
+4. Uncomment the last two lines as described in the script in the second run. The /etc/hosts file should now be populated.
 
 
 #### Caveats
