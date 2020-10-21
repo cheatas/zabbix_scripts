@@ -20,6 +20,7 @@ It is recommended to create a seperate API user with appropriate rights.
 3. Copy the printed API token and set the variable `api_token` to the aquired API token. The `print(get_api_token(zabbix_url))` line can be commented again. 
 4. Uncomment the last two lines as described in the script in the second run. The /etc/hosts file should now be populated.
 
+5. If you are on a RHEL based host instead of a Debian based host uncomment the lines after "#For RHEL based hosts" and comment the lines under "#For Debian based hosts"
 
 #### Caveats
 
